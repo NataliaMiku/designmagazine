@@ -1,163 +1,804 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="Author" content="Natalia Mikulenko, natalie.miku@gmail.com">
+    <meta name="description" content="Portfolio Website" />
+    <meta name="keywords" content="Webdesign, Development, Front End Development, Website Design Auckland, php, e-commerce, html5, css3, responsive, mobile, jQuery." />
+    <title> Designmagazine | Portfolio </title>
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+
+
+
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+ <body class="cover-page">
+              <!--[if lt IE 7]>
+              <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+              <![endif]-->          
+        <div id="cd-nav" class="hide-for-small-only">
+              <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
+              <nav id="cd-main-nav">
+                  <ul>
+                      <li><a data-scroll data-options="easing: linear" href="#slide-1">Home</a></li>
+                      <li><a data-scroll data-options="easing: linear" href="#about_section">About</a></li>
+                      <li><a data-scroll data-options="easing: linear" href="#gallery_section">Gallery</a></li>
+                      <li><a data-scroll data-options="easing: linear" href="#contact_section">Contact</a></li>
+                  </ul>
+              </nav>
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
+
+        <section id="slide-1" class="parllax_effect homeSlide">
+
+            <!-- HEADER SECTION --> 
+            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;">
+                <div class="row full-width">
+                    <div class="hsContainer">
+                        
+                        <div class="hsContent" data--10-top="opacity: 0.8;" data--500-bottom="opacity: 0.5;">
+                            
+                                <div class="">
+                                      <div class="fixed_title">
+
+                                      <div class="row">
+                                        <div class="small-12 medium-12 large-12 columns">
+                                            <h1 class="border-corners">DESIGNMAGAZINE</h1>
+                                            <div class="showcase-banner left">
+                                                <div class="text-left type-wrap">
+                                                    <span>Hi, I'm Natalia, </span>
+                                                    <span style="white-space:pre" id="typed"></span>
+                                                </div>
+                                                <!-- <img src="images/banner/browser.png" width="1200" height="650" alt=""> -->
+                                            </div>
+                                        </div>
+                                      </div>
+                                            
+                                            <!-- <h2>WEB DESIGN <span class="main_red_text"> // </span>FRONT END DEVELOPMENT <br> IN AUCKLAND</h2> -->
+                                            <!-- <a  data-scroll data-options="easing: linear" href="#about_section" class="circle-scroller dotted-x button radius">FIND<br /><span class="cursive">MORE</span></a> -->
+                                      </div> <!-- END DIV.LOGO -->
+                                </div> <!-- END 12 COLUMNS -->                            
+                        </div>
+                    </div>
+                </div>
+            </div>                  
+        </section>      
         
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
+        <section id="slide-2" class="content_section parllax_effect">
+            <div class="bcg" 
+                        data-center="background-position: 50% 10px;" 
+                        data-top-bottom="background-position: 50% -100px;" 
+                        data-bottom-top="background-position: 50% 100px;" 
+                        data-anchor-target="#slide-2"> 
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div>
+                <!-- LARGE SCREEN TOP BAR MENU -->
+                <section class="navigation-section show-for-medium-up">
+                  <!-- SHOW FOR LARGE AND UP ONLY -->
+                  <div class="row full-width">
+                    <div class="large-12">
+                      <!-- TOP BAR INITIALIZATION -->
+                      <nav class="top-bar nav_bg">
+                        <ul class="title-area">
+                          <li class="name">
+                              <img src="images/white_crown.png" width="35" height="38" alt="">
+                          </li>
+                        </ul> <!-- END UL.TITLE-AREA -->
+                        <!-- TOP BAR MENU ELEMENTS -->
+                        <section class="top-bar-section">
+                          <ul class="">
+                              <li class="active first_menu_item">
+                                  <a data-scroll data-options="easing: linear" href="#http://designmagazine.co.nz/">Home</a>
+                              </li>
+                              <li class="">
+                                  <a data-scroll data-options="easing: linear" href="#about_section">About</a>
+                              </li>
+                              <li class="">
+                                  <a data-scroll data-options="easing: linear" href="#gallery_section">Gallery</a>
+                              </li>                                  
+                              <li>
+                                  <a data-scroll data-options="easing: linear" href="#contact_section">Contact</a>
+                              </li>
+                          </ul>
+                        </section> <!-- END SECTION.TOP-BAR-SECTION -->
+                      </nav> <!-- END NAV.TOP-BAR -->
+
+                    </div> <!-- END 12 COLUMNS -->
+                  </div> <!-- END ROW -->
+                </section> <!-- END SECTION.NAVIGATION-SECTION -->
+                <!-- OFF CANVAS SECTIONS WRAPPING THE MAIN CONTENT -->
+                <!-- <main> -->
+
+                     <div class="off-canvas-wrap" data-offcanvas="">
+                          <div class="inner-wrap">
+
+                          <div class="contain-to-grid sticky">
+                              
+                              <nav class="top-bar tab-bar show-for-small-only" data-topbar data-options="sticky_on: small">
+                                  <section class="left-small">
+                                    <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+                                  </section>
+                                  <section class="right tab-bar-section">
+                                    <h1 class="title"><img class="icon-crown" src="images/white_crown.png" alt="crown" width="20" height="20" /><!-- Designmagazine --></h1>
+                                  </section>
+                              </nav>
+                          </div>     
+
+                              <aside class="left-off-canvas-menu">
+                                <ul class="off-canvas-list">
+                                  <li><label>Menu</label></li>
+                                  <li><a data-scroll data-options="easing: linear" href="#slide-1">Home</a></li>
+                                  <li><a data-scroll data-options="easing: linear" href="#about_section">About</a></li>
+                                  <li><a data-scroll data-options="easing: linear" href="#gallery_section">Gallery</a></li>
+                                  <li><a data-scroll data-options="easing: linear" href="#contact_section">Contact</a></li>
+                                </ul>
+                              </aside>
+                                <div class="row main-section light-gray-bg">
+                                      <div class="small-12 medium-12 large-12 columns text-center">
+                                          <section id="top_slides_section">
+                                  
+                                              <div class="title_section">
+                                                  <h2>WHAT’S DESIGNMAGAZINE?</h2>
+                                              </div>    
+
+                                              <div class="subtitle">
+                                                  <!-- <h6>The art of story telling.</h6> -->
+                                              </div>
+                                              <div class="text-center slider_navigation">
+                                                  <ul class="inline-list nav_box">
+                                                      <li class="tab_top_slider" id="about_white" data-orbit-link="slide_about">
+                                                          <a><h5>About</h5></a>
+                                                      </li><!-- 
+                                                      <li class="tab_top_slider" id="manifesto_white" data-orbit-link="slide_manifesto">
+                                                          <a><h5>Manifesto</h5></a>
+                                                      </li> -->
+                                                      <li class="tab_top_slider" id="name_white" data-orbit-link="slide_name">
+                                                          <a><h5>Name</h5></a>
+                                                      </li>
+                                                  </ul>
+                                              </div>
+
+                                              <section class="slider_section">
+                                                    <div class="row">
+                                                        <div class="large-12 columns">
+                                                            <div  id="slider_top_wrap" class="slider_wrap">
+                                                                <ul id="slider_top" data-orbit data-options="animation:fade;
+                                                                                                              timer: false;
+                                                                                                              animation_speed:0;
+                                                                                                              slide_number: false;
+                                                                                                              active_slide_class: 'activeTopslider';
+                                                                                                              timer_show_progress_bar: false;
+                                                                                                              bullets:false;">
+                                                                      <!--<ul data-orbit>-->
+                                                                      <li data-orbit-slide="slide_about">
+                                                                          <img src="images/banner/slide_4.png" alt="">
+                                                                          <div class="orbit-caption">
+                                                                                <p class="capt-top-left">I'm a Web Designer and Front End Developer from Auckland, New Zealand. <!-- I've been described as having a very special gift - the ability to see a brand come alive from the very beginning.  --></p>
+
+                                                                                <p class="capt-bot-right-book">My strength is web design and front-end development, however I also design print media and create logos. </p>
+                                                                          </div> 
+                                                                         
+                                                                      </li>
+<!-- 
+                                                                      <li class="slide_manifesto" data-orbit-slide="slide_manifesto">
+                                                                          <img src="images/banner/slide_2.png" alt="">
+                                                                          <div class="orbit-caption">
+                                                                                <p class="capt-top-right">Great Design isn’t just seen but felt and it lasts a long time.</p>
+                                                                                
+                                                                                <p class="capt-bot-left">Put courage, creativity, meaning &amp; heart into everuthing you do.</p>
+                                                                          </div> 
+                                                                      </li> -->
+
+                                                                      <li data-orbit-slide="slide_name">
+
+                                                                           <img class="slide_name_img" src="images/banner/slide_1.png" alt="">
+                                                                          <div class="orbit-caption">
+                                                                                <p class="capt-top-left">Designmagazine is more than a name, it's an idea of telling the stories with catchy headlines.
+                                                                                It is concept where marketing becomes interesting, inspirational, entertaining and brand has a story to tell.  
+                                                                               <!--  It is a concept of the web sites which are 
+                                                                                Some things get shared just because they’re cool. Interesting. Inspirational.  --> <!-- The name "Designmagazine" I have choosen for my website  is meaningful for me.  
+                                                                                I like the way how a magazine headlines work. I like the way it’s built. I want
+                                                                                my “magazine” have a fresh content inside: it must be an entartaining reading
+                                                                                where "words and pictures must march  together, reinforcing each others".  --></p>
+
+                                                                                <p class="capt-bot-right">And my job is to to unlock the value in that story. It's about finding ways to create fresh creative meaning of it. <!--  A person who inspires me most is known as "Father of Advertising" , David Ogilvy.
+                                                                                 In my opinion he made a huge imnpact into advertising world by introducing/integrating
+                                                                                 a high level of creativity and morality. I am trying my best to follow his simple rules 
+                                                                                 which is absolutelly transferable in any idustry where exist a product to sell. --></p>
+                                                                          </div> 
+                                                                          
+                                                                      </li>
+                                                                                            
+                                                                  </ul>
+                                                            </div>                                                                  
+                                                        </div>
+                                                    </div>
+                                              </section><!-- END SLIDER_SECTION -->
+                                          </section><!-- END TOP_SLIDES_SECTION -->
+
+                                          <div class="row basic-black-bg">
+                                            <div class="large-12 columns">
+                                                <section id="about_section">
+                                                
+                                                    <div class="title_section">
+                                                        <h2>ABOUT</h2>
+                                                    </div>
+
+                                                    <div class="line_separator"></div>                                           
+                                                    
+                                                    <div class="subtitle">
+                                                        <h6>Specialising in CSS3, HTML5, SASS, responsive design, JavaScript, JQuery, WordPress, and design to produce creative and effective websites.</h6>
+                                                    </div>
+
+                                                    <div class="row about-panel">
+                                                        <div class="large-6 medium-6 columns left-part">
+                                                            <div class="left-about-panel">
+
+                                                                <div class="panels-title">
+                                                                    <h4>WHY DESIGNMAGAZINE?</h4>
+                                                                </div>
+
+                                                                <div class="panel-content text-justify">
+                                                                    <p> I have a wide range of skills; front end development, design, and back end development.
+                                                                        I mainly take on front end development projects now but with experience in
+                                                                        these three disciplines, I am able to work on a project with the full scope in
+                                                                        mind. Clients find this approach to be extremely valuable as I am able to
+                                                                        easily integrate with and provide experience and advice on all aspects of a
+                                                                        project.</p>
+                                                                </div>
+
+                                                                <div class="social-media">
+                                                                    <ul class="inline-list">
+                                                                        <li><a href="https://www.behance.net/NatMiku" class="social-bahance"><i class="fa fa-behance"></i></a></li>
+                                                                        <li><a href="https://plus.google.com/101373256226040485019/posts" class="social-gplus"><i class="fa fa-google-plus"></i></a></li>
+                                                                        <li><a href="https://twitter.com/designmagnz" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
+                                                                        <li><a href="https://dribbble.com/Nat.Miku"  class="social-dribbble"><i class="fa fa-fw fa-dribbble"></i></a></li>
+                                                                        <!-- <li><a href="#" class="social-inst"><i class="fa fa-instagram"></i></a></li> -->
+                                                                        <!-- <li><a href="#" class="social-pinterest"><i class="fa fa-pinterest"></i></a></li> -->
+                                                                    </ul>
+                                                                </div>                                                        
+                                                                <div class="tabs-menu">
+                                                                    <ul class="tabs vertical" data-tab>
+                                                                        <li class="tab-title">
+                                                                            <a id="last-panel-tab" href="#panel1">
+                                                                                <i class="fa fa-pencil"></i>WEB DESIGN
+                                                                            </a>
+                                                                        </li>
+
+                                                                        <li class="tab-title active">
+                                                                            <a  id="mid-panel-tab" href="#panel2">
+                                                                                <i class="fa fa-gears"></i>WEB DEVELOPMENT
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="tab-title">
+                                                                            <a  id="first-panel-tab"href="#panel3">
+                                                                                <i class="fa fa-graduation-cap"></i>SKILLS
+                                                                            </a>
+                                                                        </li>
+                                                                        
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>    
+
+                                                        <div class="large-6 medium-6 columns right-part">
+
+                                                            <div class="right-about-panel">
+
+                                                                <div class="tabs-content vertical">
+                                                                        <div class="content" id="panel3">
+                                                                            <div class="panels-title">
+                                                                                <h4>SOFTWARE SKILLS &amp; STRENGHTS</h4>
+                                                                            </div>
+                                                                            <div class="panel-content text-justify">
+                                                                                <div class="row">
+                                                                                    <div class="large-6 small-6 medium-6 columns text-center">
+                                                                                      <h6 class="text-justify">SOFTWARE:</h6>
+                                                                                          <ul>
+                                                                                              <li>Photoshop</li>
+                                                                                              <li>Illustrator</li>
+                                                                                              <li>Dreamweaver</li>
+                                                                                              <li>Sublime Text</li>
+                                                                                              <li>3D Max</li>
+                                                                                              <li>Balsamiq</li>
+                                                                                              <li>MS Office</li>
+                                                                                              <li>Acrobat XI Pro</li>
+                                                                                          </ul>
+                                                                                    </div>
+                                                                                    <div class="large-6 small-6 medium-6 columns text-center">
+                                                                                          <h6 class="text-justify">LANGUAGES:</h6>
+                                                                                          <ul>
+                                                                                              <li>HTML/CSS</li>
+                                                                                              <li>SCSS/SASS</li>
+                                                                                              <li>PHP</li>
+                                                                                              <li>MySQL</li>
+                                                                                              <li>JS/JQUERY</li>
+                                                                                          </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="large-6 small-6 medium-6 columns text-center">
+                                                                                        <h6 class="text-justify">FRAMEWORKS:</h6>
+                                                                                        <ul>
+                                                                                              <li>WordPress</li>
+                                                                                              <li>Foundation</li>
+                                                                                              <li>Bootstrap</li>
+                                                                                              <li>Boilerplate</li>
+                                                                                              <li>GruntJS Task Runner</li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                    <div class="large-6 small-6 medium-6 columns text-center">
+                                                                                        <h6 class="text-justify">NOVICE:</h6>
+                                                                                        <ul>
+                                                                                            <li>Ruby on Rails</li>
+                                                                                            <li>Python</li>
+                                                                                        </ul>
+                                                                                    </div>                                                                          
+                                                                                </div>                                                                        
+                                                                            </div>
+                                                                            <div class="row download-cv">                                                                              
+                                                                                <div class="large-12 medium-12 columns">
+                                                                                    <a href="images/resume/Natalia.Mikulenko.CV.pdf" target="new" class="small button">DOWNLOAD FULL RESUME</a>
+                                                                                </div>                                                                              
+                                                                                <div class="large-12 medium-12 columns text-center">
+                                                                                    <p>Natalia.Mikulenko.Resume.pdf(275kb)</p>
+                                                                                    <p>Last Updated: August 28ht, 2014</p>
+                                                                                </div>                                                                          
+                                                                            </div>                                                                    
+                                                                        </div>
+                                                                        <div class="content active" id="panel2">                                                                    
+                                                                            <div class="panels-title">
+                                                                                <h4>FRONT/BACK END DEVELOPMENT</h4>
+                                                                            </div>
+                                                                            <div id="NoWheelPropagation" class="panel-content content-holder text-justify">
+                                                                                <h6>FRONT END EVELOPMENT</h6>
+                                                                                <p>I create websites that allow the user to experience your website in the best
+                                                                                and most appropriate way suited to the device they are using. By working using
+                                                                                progressive enhancement, a website is delivered with a responsive layout that
+                                                                                can best make use of the space available on the smallest to largest devices.
+                                                                                Cross browser compatibility is ensured by using feature detection so older
+                                                                                browsers still in use today provide a solid experience, whilst modern browsers
+                                                                                can go the next step and enhance the users time spent on your site. Writing
+                                                                                semantic markup that is documented and easy to read means it can be maintained
+                                                                                and scaled in the future, and allows co-workers to quickly pick it up.</p>
+                                                                                <h6>BACK END DEVELOPMENT</h6>
+                                                                                <p>I often make use of PHP/ MySQL and I have experience working with WordPress.</p>
+                                                                                <h6>OTHER SKILLS</h6>
+                                                                                <p>For many projects I rely on tools and open-source libraries such as jQuery,
+                                                                                SASS, Git, Grunt, Bower, and Modernizr.  I enjoy writing and sharing my
+                                                                                knowledge with others and currently I am working on blog section of this website.</p>
+
+                                                                            </div>  
+
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="content" id="panel1">  
+
+                                                                            <div class="panels-title">
+                                                                                <h4>WEB DESIGN &amp; LOGO DESIGN</h4>
+                                                                            </div>
+
+                                                                            <div id="NoWheelPropagationWeb" class="panel-content content-holder text-justify">
+                                                                                <h6>WEB DESIGN</h6>
+                                                                                <p>I officially call myself a Front End Developer, but have a long history of web
+                                                                                design work too. In my experience, it is best to concentrate solely on one
+                                                                                aspect of creating a website whilst still having applicable knowledge of other
+                                                                                areas (such as design and back end development) to be of the most value.
+                                                                                Although I no longer take on projects that are solely design now, I believe I
+                                                                                can provide valuable design experience to a project, aim to achieve the same
+                                                                                level of vision as a designer would and am just as comfortable working with
+                                                                                Adobe Photoshop and Illustrator as I am writing code.</p>
+                                                                                <h6>GRAPHIC DESIGN</h6>
+                                                                                <p>My strength is website design and front-end development, however as a natural
+                                                                                progression of my studies I also design print media.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                </div>                                                    
+                                                            </div>
+                                                        </div>
+
+                                                    </div>                                      
+                                                </section><!-- END ABOUT_SECTION -->
+                                            </div>
+                                          </div>      
+                                          <section id="gallery_section">
+                                              
+
+                                              <div class="title_section">
+                                                  <h2>GALLERY</h2>
+                                              </div>                                        
+                                              
+                                              <div class="subtitle">
+                                                  <h6>Here is some of my latest work</h6>
+                                              </div>                                               
+
+                                                         <div class="row paddingless">
+                                                             <div class="large-12 columns">
+
+                                                                
+                                                                <ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-2">
+                                                                  <li>
+                                                                     <div class="modalBox">
+                                                                         <a href="projects.html#1">
+                                                                             <figure class="effect-layla">
+                                                                               <img src="images/gallery/thumbs/versailles-home.jpg" alt="versailles"/>
+                                                                               <figcaption class="hide-for-small-only">
+                                                                                 <h2>Versailles</h2>
+                                                                                 <p>Beauty Salon</p>
+                                                                                 <div class="caption_divider"></div>
+                                                                                 <a href="projects.html#1">View More<i class="fa fa-angle-double-down"></i></a>
+                                                                               </figcaption>     
+                                                                             </figure>
+                                                                           </a>    
+                                                                         <div class="title-for-small show-for-small-only">
+                                                                              <h2>Versailles</h2>
+                                                                             <p>Beauty Salon</p>
+                                                                         </div>
+                                                                     </div>
+                                                                  </li>
+                                                                  <li>
+                                                                         <div class="modalBox">
+                                                                             <figure class="effect-layla">
+                                                                               <img src="images/gallery/thumbs/yourcar-home.jpg" alt="yourcar"/>
+                                                                               
+                                                                               <figcaption class="hide-for-small-only">
+                                                                                 <h2>YOURCAR</h2>
+                                                                                 <p>Vehicle Dealership</p>
+                                                                                 <div class="caption_divider"></div>
+                                                                                 <!-- <a href="projects.html#yourcar-window">View More<i class="fa fa-angle-double-down"></i></a> -->
+                                                                                 <a href="projects.html#2">View More<i class="fa fa-angle-double-down"></i></a>
+                                                                               </figcaption>     
+                                                                             </figure>
+                                                                             <div class="title-for-small show-for-small-only">
+                                                                                  <h2>YOURCAR</h2>
+                                                                                  <p>Vehicle Dealership</p>
+                                                                               </div>
+                                                                         </div> 
+                                                                         
+                                                                  </li>
+                                                                  <li>
+                                                                    <div class="modalBox">
+                                                                             <figure class="effect-layla">
+                                                                               <img src="images/gallery/thumbs/microtech-home.jpg" alt="mtech"/>
+                                                                               
+                                                                               <figcaption class="hide-for-small-only">
+                                                                                 <h2>MicroTechSolutions</h2>
+                                                                                 <p>IT Company</p>
+                                                                                 <div class="caption_divider"></div>
+                                                                                 <a href="projects.html#3">View More<i class="fa fa-angle-double-down"></i></a>
+                                                                               </figcaption>     
+                                                                             </figure>
+                                                                             <div class="title-for-small show-for-small-only">
+                                                                                  <h2>MicroTechSolutions</h2>
+                                                                                 <p>IT Company</p>
+                                                                               </div>
+                                                                         </div> 
+                                                                      
+                                                                         
+                                                                  </li>
+                                                                  <li>
+                                                                    <div class="modalBox">
+                                                                             <figure class="effect-layla">
+                                                                               <img src="images/gallery/thumbs/sellyourcar-home.jpg" alt="sellyourcar"/>
+                                                                               
+                                                                               <figcaption class="hide-for-small-only">
+                                                                                 <h2>SellYourCar</h2>
+                                                                                 <p>Vehicle Dealership</p>
+                                                                                 <div class="caption_divider"></div>
+                                                                                 <a href="projects.html#4">View More<i class="fa fa-angle-double-down"></i></a>
+                                                                               </figcaption>     
+                                                                             </figure>
+                                                                             <div class="title-for-small show-for-small-only">
+                                                                                  <h2>SellYourCar</h2>
+                                                                                  <p>Vehicle Dealership</p>
+                                                                               </div>
+                                                                         </div>
+                                                                  </li>
+                                                                </ul>
+
+                                                              </div>  
+
+                                                       </div>   
+                                          </section><!-- END GALLERY_SECTION -->
+                                      </div><!-- END COLUMNS -->
+                                </div> <!-- END ROW -->
+
+
+
+                                <a class="exit-off-canvas"></a>
+                            </div>                                                                
+                            <!-- CLOSE THE OFF-CANVAS MENU -->                                                      
+                        </div> <!-- END OFF CANVAS -->
+
+                         
+             <!--  </main> -->
+                                    
+            </div> <!-- END BCG -->
+        </section>  <!-- END BCG -->              
+
+        <section id="slide-3">
+            <div class="bcg" 
+              data-center="background-position: 50% 0px;" 
+              data-top-bottom="background-position: 50% -100px;" 
+              data-bottom-top="background-position: 50% 100px;" 
+              data-anchor-target="#slide-3">
+                  <div class="hsContainer">
+                      <div class="hsContent" 
+                        data--0-bottom="opacity: 0;" 
+                        data--100-bottom="opacity: 1;" 
+                        data-center="opacity: 0" 
+                        data-100-top="opacity: 1" 
+                        data-anchor-target="#slide-1 a">
+                            <a data-scroll data-options="easing: linear" href="#slide-1" class="circle-scroller dotted-x button radius">BACK<br /><span class="cursive">TO TOP</span></a>
+                      </div>
+                      <!-- FOOTER SECTION -->
+                      <footer id="slide-4">
+                          <div data-center="background-position: 50% 0px;" 
+                               data-bottom-top="opacity: 0;"
+                               data-50-bottom="opacity: 0;" 
+                               data-0-bottom="opacity: 1; width: 100%;"                                                    
+                               data-anchor-target="#slide-4">
+                              <section id="contact_section">
+                                  <div class="row paddingless contact-panel basic-black-bg">
+                                      <div class="large-12 columns">                                                    
+                                          <div class="row">
+                                              <div class="large-12 columns">
+                                                  <ul class="tabs" data-tab>
+                                                      <li class="tab-title active"><a href="#panel3-1">Get in Touch</a></li>
+                                                      <li class="tab-title"><a href="#panel3-2">ABOUT THIS WEBSITE</a></li>
+                                                  </ul>                                                                    
+                                              </div>
+                                          </div>
+                                          <div class="tabs-content">
+                                              <div class="row content active" id="panel3-1">
+                                                  <div class="large-12  basic-black-bg columns">                                                                      
+                                                      <div class="row">
+                                                          <div class="large-6 medium-6 columns">
+                                                              <form id="contact_form" data-abide action="send_email.php" method="post">
+                                                                    <h6>CONTACT FORM</h6>
+                                                                    <div class="name-field">
+                                                                        <input  required pattern="[a-zA-Z\s]+" type="text" name="name" placeholder="Name *" />
+                                                                        <small class="error">Name is required and must be a string.</small>
+                                                                    </div>
+
+                                                                    <div class="email-field">        
+                                                                        <input type="email" name="email" required placeholder="Email Address *" />
+                                                                        <small class="error">An email address is required.</small>
+                                                                    </div>
+
+                                                                    <div class="text-field">
+                                                                        <textarea required name="message" placeholder="Message" rows="7"></textarea>
+                                                                        <small class="error">Oops, looks like you forgot to fill this in!</small>
+                                                                    </div>
+                                                                    <input type="submit" name="submitEmail" class="button medium right" value="Submit">
+                                                              </form>
+                                                          </div>
+                                                          <div class="large-6 medium-6 columns">
+                                                              <div class="row">
+                                                                  <div class="large-12 columns">                                                                                
+                                                                      <form id="newsletter_form" data-abide action="newsletters_subscribe.php" method="post">
+                                                                          <h6>NEWSLETTER</h6>                                                                  
+                                                                          <div class="row">
+                                                                              <div class="large-12 columns">
+                                                                                  <div class="row collapse">
+                                                                                      <div class="small-8 columns">
+                                                                                          <div class="email-field">        
+                                                                                              <input type="email" name="email" required placeholder="Email Address *" />
+                                                                                              <small class="error">An email address is required.</small>
+                                                                                          </div>
+                                                                                      </div>
+                                                                                      <div class="small-4 columns">
+                                                                                          <!--<a href="#" class="button postfix">Confirm</a>-->
+                                                                                          <input type="submit" name="submitNews" class="button medium " value="Confirm">
+                                                                                      </div>
+                                                                                  </div>  
+                                                                              </div>
+                                                                          </div>
+                                                                      </form>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="row">
+                                                                  <div class="large-12 columns">
+                                                                      <div class="socials-footer">                                                                     
+                                                                          <h6>SOCIAL MEDIA</h6>
+                                                                          <div class="social-media-footer">
+                                                                            <ul class="inline-list">
+                                                                              <li><a href="https://www.behance.net/NatMiku"><i class="fa fa-fw fa-behance"></i></a></li>
+                                                                              <li><a href="https://plus.google.com/101373256226040485019/posts"><i class="fa fa-fw fa-google-plus"></i></a></li>
+                                                                              <li><a href="https://twitter.com/designmagnz"><i class="fa fa-fw fa-twitter"></i></a></li>
+                                                                              <!-- <li><a href="http://nat8989.deviantart.com/"><i class="fa fa-fw fa-deviantart"></i></a></li> -->
+                                                                              <li><a href="https://github.com/NataliaMiku"><i class="fa fa-fw fa-github-alt"></i></a></li>
+                                                                              <!-- <li><a href="#"><i class="fa fa-fw fa-instagram"></i></a></li> -->
+                                                                            </ul>
+                                                                          </div>
+                                                                      </div>    
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="row content" id="panel3-2">
+                                                  <div class="large-12 columns">                                                                      
+                                                        <div class="row">
+                                                            <div class="large-6 columns">
+                                                                  <p>I am still in the process of transitioning to a new website, which is running a more progressive, forward thinking code now and based on HTML5/CSS3, JS and GruntJS. Powered by ZURB Foundation5, COMPASS and SASS. <!-- Also I am going to focus on developing a blog secton and create a separate gallery page. --></p>
+                                                                  <p>So, don't forget come back later!</p>
+                                                            </div>
+                                                            <!-- <div class="large-6 columns">
+                                                                <p>Second panel content goes here...</p>
+                                                            </div> -->
+                                                        </div>
+                                                  </div>
+                                              </div>                                          
+                                          </div>
+                                      </div><!-- END FOOTER MAIN COLUMN-12 -->
+                                  </div> <!-- END FOOTER MAIN ROW -->    
+                              </section>
+                              <!-- COPYRIGHT SECTION -->
+                              <section class="copyright_section">
+                                  <div class="row  stone-gray-bg">
+                                      <div class="large-12 columns">                                                
+                                            <div class="row" id="copyright_section">
+                                                <div class="large-6 columns">
+                                                    <div class="name copyright left">
+                                                          <h5> 
+                                                              <img class="icon-crown" src="images/white_crown.png" alt="crown" width="15" height="15" />
+                                                              <a href="#">DESIGNMAGAZINE</a>
+                                                          </h5>
+                                                          <p>&copy; 2014 Coded by DESiGNMAGAZiNE All rights reserved.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="large-6 columns">
+                                                    <!-- <ul class="inline-list site-map text-right right">
+                                                        <li><a href="#">Home<span class="main_red_text">//</span></a></li>
+                                                        <li><a href="#">Site Map<span class="main_red_text">//</span></a></li>
+                                                        <li><a href="#">Contact<span class="main_red_text">//</span></a></li>
+                                                    </ul> -->                                                                
+                                                </div>
+                                            </div>
+                                      </div>
+                                  </div>
+                              </section> <!-- END SECTION.FULL-WIDTH COPYRIGHT-SECTION -->
+                          </div>                                
+                      </footer> <!-- END FOOTER -->
+                  </div>
+            </div>
+        </section>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.tab.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.clearing.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+
     <script src="js/app.js"></script>
+
+    <!--Load Latest jquery
+    =====================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    
+    <!--JS - PARALLAX
+    ==========================================================================================================-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/parallax/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <!-- <script src="js/vendor/parallax/imagesloaded.js"></script> -->
+    <script src="js/vendor/parallax/enquire.min.js"></script>
+    <script src="js/vendor/parallax/skrollr.js"></script>
+    <!-- <script src="js/vendor/parallax/_main.js"></script> -->
+
+    <!--JS - SMART NAVIGATION
+    ==========================================================================================================-->
+    <script src="js/vendor/smart_navigation/jquery-2.1.1.js"></script>
+    <script src="js/vendor/smart_navigation/main.js"></script> <!-- Resource jQuery -->
+
+
+<script type="text/javascript">
+    function slideUrl(el) {
+      var current = this.currentItem;
+      var slide = location.hash;
+      if(location.hash === '') {
+        location.hash = 'slide' + current;
+      } else {
+        var goToSlide = slide.replace("#slide",""); 
+        sync1.trigger("owl.jumpTo", goToSlide);
+
+        el.find(".owl-item").eq(goToSlide).addClass("synced");
+        sync2.trigger("owl.jumpTo", goToSlide);
+
+        this.currentItem = goToSlide;
+        console.log(this.currentItem);         
+      }
+    }
+
+</script>
+
+    <!--JS - PERFECT SCROLLING
+    ==========================================================================================================-->
+    <script src="js/vendor/custom_scrolling/jquery.mousewheel.js"></script>
+    <script src="js/vendor/custom_scrolling/perfect-scrollbar.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        "use strict";
+        //$('#Default').perfectScrollbar();
+        $('#NoWheelPropagation').perfectScrollbar({wheelPropagation:true});
+        $('#NoWheelPropagationWeb').perfectScrollbar({wheelPropagation:true});
+      });
+    </script>
+
+    <!--JS - SMOOTH SCROLLING
+    ==========================================================================================================-->
+
+    <script src="js/vendor/smooth_scroll/smooth-scroll.js"></script>
+    <script>
+      smoothScroll.init({
+        speed: 1000,
+        easing: 'easeInOutCubic',
+        offset: 0,
+        updateURL: false,
+        callbackBefore: function ( toggle, anchor ) {},
+        callbackAfter: function ( toggle, anchor ) {}
+      });
+    </script>
+
+    <!--JS - SLIDE GALLERY CAPTION
+    ==========================================================================================================-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.pic-caption').css('top','80%');
+        $('.modalBox').hover(function(){
+        $(this).find('.pic-caption').stop().animate({'top':'0'}, 200, function(){});
+      },function(){
+        $(this).find('.pic-caption').stop().animate({'top':'80%'}, 200, function(){});
+      });
+      });
+    </script>
+
+    <!--JS - SMOOTH SCROLLING
+    ==========================================================================================================-->
+    <script src="js/vendor/typed/typed.js" type="text/javascript"></script>
+    <script>
+        $(function(){
+
+            $("#typed").typed({
+                strings: ["front-end developer", "web designer", "front-end developer \nand web designer!"],
+                typeSpeed: 60,
+                backDelay: 2000,
+                loop: false,
+                // defaults to false for infinite loop
+                loopCount: false,
+                callback: function(){ foo(); },
+                resetCallback: function() { newTyped(); }
+            });
+
+            $(".reset").click(function(){
+                $("#typed").typed('reset');
+            });
+
+        });
+
+        function newTyped(){ /* A new typed object */ }
+
+        function foo(){ console.log("Callback"); }
+
+    </script>
   </body>
 </html>

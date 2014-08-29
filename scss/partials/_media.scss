@@ -1,0 +1,2184 @@
+@import "../settings";
+@import "../helpers/mixins";
+
+.f-topbar-fixed {
+		@media #{$small-only} {
+				padding-top: 0 !important;
+		}
+
+		@media #{$large-up} {
+				margin-top: -$topbar-height !important;
+		}
+}
+
+@media #{$xlarge-up} {
+        #slide-1 .bcg {
+                .hsContent {
+                        //margin-top: 20%;
+                }
+                min-height: 960px;       
+        }
+}
+
+@media #{$large-up} {
+        .homeSlide {
+                h1.border-corners {
+                     font-size: 6em;
+                }
+                .fixed_title {
+                        padding: 0 25%;
+                }
+        }
+
+        .slider_wrap {
+                padding: 2% 15% 0
+        }        
+
+        #top_slides_section .slider_navigation {                
+                .nav_box {
+                        li {
+                            //width: 33.33%;
+                            width: 50%;
+                        }
+                }
+                
+                .slider_wrap {
+                        .orbit-caption p.capt-bot-right {
+                                padding-top: 30%;
+                        }
+                }
+        }
+
+        .top-bar.nav_bg {
+                //padding-left: 50%;                
+        }
+
+
+        #slide-1 .bcg {
+                .hsContent {
+                       // margin-top: 20%;
+                }
+                //min-height: 860px;        
+        }
+
+        #about_section {
+                .tabs-menu {
+                        ul {                                        
+                                @include transform(translate(80px, 0px));
+                        } 
+                }
+        }
+
+        #slide-1 .bcg {
+                .hsContent {
+                        //left: 20%;
+                       .fixed_title {
+                                //padding: 0;
+                       }
+                }       
+        }
+
+        body.works-page {
+
+                #top_slides_section {
+
+                        .item {
+
+                                .project-description {
+
+                                    h2 {
+                                        font-size: 2.5em;
+                                    }
+                                }
+
+                                .project-title {
+                                    .title {
+                                       // padding: 1.1em 0 4em;
+                                    }
+                                }
+                                .slider-buttons {
+                                    right: 45%;
+                                   
+                                }            
+
+                                .orbit-container {
+                                    .orbit-next {
+                                        right: 10%;
+                                    }
+                                    .orbit-prev {
+                                        left: 78%;
+                                    }
+                                }
+
+                                .customOwlControls {
+                                    .btn-control {
+                                        
+                                        padding: 4em 1.5em 4em;
+                                        .btn-next,
+                                        .btn-prev {
+                                                //height: 11em;
+                                                //padding: 4.5em 2em 4.5em 1em;
+                                        }
+
+                                    }
+                                }
+                        }            
+
+                }
+        }        
+}
+
+@media #{$large-only} {
+        body.works-page {
+
+                #top_slides_section {
+
+                        .item {
+
+                                .project-description {
+
+                                    h2 {
+                                        //font-size: 2.5em;
+                                    }
+                                }
+
+                                .project-title {
+                                    .title {
+                                        //padding: 1.1em 0 4em;
+                                    }
+                                }
+                                .slider-buttons {
+                                    //right: 45%;
+                                   
+                                }            
+
+                                .orbit-container {
+                                    .orbit-next {
+                                        //right: 10%;
+                                    }
+                                    .orbit-prev {
+                                        //left: 78%;
+                                    }
+                                }
+
+                                .customOwlControls {
+                                    .btn-control {
+                                        //padding: 4em 1.5em 4em;
+                                        .btn-next,
+                                        .btn-prev {
+                                                //height: 11em;
+                                                //padding: 4.5em 2em 4.5em 1em;
+                                        }
+
+                                    }
+                                }
+                        }            
+
+                }
+        }  
+}
+
+@media #{$medium-only} {
+        .homeSlide {
+                .fixed_title {
+                        padding: 0 35%;
+                }
+
+                 h1.border-corners {
+                     font-size: 2.5em;
+                     text-align: right;
+                }
+                h2 {
+                    font-size: 2em;
+                }         
+        }
+         figure.effect-layla  {
+                //height: 400px;
+        }        
+
+        .top-bar.nav_bg {
+                //padding-left: 40%;                
+        }
+
+        #top_slides_section {
+                .slider_navigation {
+                        margin-bottom: 4em;
+                        width: 40%;
+                } 
+
+                #slider_top {
+                        height: 650px;
+                }
+
+                .nav_box {
+                        li {
+                            //width: 33.33%;
+                            width: 50%;
+                        }
+                }                
+        }
+
+        #about_section {
+                .tabs-menu {
+                        //margin-right: 1.5em;
+                        margin-right: 0;
+                        .tab-title {
+                            & > a#last-panel-tab,
+                            & > a#first-panel-tab,
+                            & > a#mid-panel-tab {
+                                padding: 1rem;
+                            }
+                        }
+                        ul {                                        
+                                @include transform(translate(50px, 0px));
+                        } 
+                }
+        }
+
+        footer #contact_section .tabs-content .content {
+                height: 396px;
+        }
+
+        #slide-1 .bcg {
+                .hsContent {
+                        //left: 40%;
+                        //margin-top: 10%;
+                       .fixed_title {
+                                padding: 4em 0 0;
+                        } 
+                 }
+                 min-height: 760px;        
+        } 
+
+        body.works-page {
+
+                #top_slides_section {
+
+                    .item {
+                        .customOwlControls {
+                            .btn-control {
+                                //padding: 4em 1.5em 4em;
+                                .btn-next,
+                                .btn-prev {
+                                        height: 11em;
+                                        padding: 4.5em 2em 4.5em 1em;
+                                }
+
+                            }
+                        }
+                        
+
+                        .project-title {
+                                    //position: absolute;
+                                    //left: 4%;
+                                    .title {
+                                            padding: 2em 1em 4em;
+                                    }
+                        }                    
+                        
+                        .project-description {
+
+                            h2 {
+                                font-size: 2em;
+                            }
+                        }    
+                    }
+
+                    .slider-buttons {
+                                right: 25%;
+                                margin: 0;
+                    }            
+
+                    .orbit-container {
+                        .orbit-next {
+                            right: 5%;
+                        }
+                        .orbit-prev {
+                            left: 80%;
+                        }
+                    }
+
+                        
+
+                }
+        }        
+}
+
+@media #{$medium-up} {
+        .homeSlide {
+                h1.border-corners {
+                     //font-size: 4.5em;
+                     text-align: right;
+                }
+
+                .fixed_title {
+                        padding: 0 35%;
+                        min-height: 650px;
+                        .type-wrap {
+                            font-size: 1.8em;
+                            margin-top: 20%;
+                        }
+                }
+        }
+
+        #top_slides_section {    
+       
+                .slider_navigation {
+                        margin: 0 auto 4em;
+                        width: 20%;
+                        .nav_box {
+                                li {
+                                    //width: 33.33%;
+                                    width: 50%;
+                                }
+                        }                        
+                }
+                .slider_wrap {
+                        
+                        .orbit-caption {
+
+                                p {
+                                        
+                                        width: 20em;
+                                        &.capt-bot-right {
+                                        }
+
+                                        &.capt-bot-right-book {
+                                                padding-top: 40%;
+                                        }
+
+                                        &.capt-top-right {
+                                        }
+
+                                        &.capt-bot-left {
+                                                padding-top: 60%;
+                                        }
+                                }
+                        }
+                        .slide_manifesto {
+                                padding-top: 10%;
+                        }
+                }      
+        }        
+
+        #slide-1 .bcg {
+                .hsContent {
+                       .fixed_title {
+                                padding: 0 10%;
+                       }
+                }       
+        }
+
+        .reveal-modal.open {
+                height: 950px !important;
+                .orbit-container{
+                        height: 600px;
+                }
+                        .orbit-bullets {
+                                //top: 600px;
+                        } 
+        }
+
+        #about_section {
+                .tabs-menu {
+                        margin-right: 0; 
+                }
+                .left-about-panel {
+                        height: 650px;                  
+                }
+                .about-panel .left-about-panel {
+                       
+                        padding: 10% 15%;
+                        float: none;
+                } 
+         }
+
+        #gallery_section {
+                & > .row {
+                    padding: 0 10%;
+                    figure.effect-layla  {
+                            height: 300px;
+                    }
+                }
+
+        } 
+
+         
+
+        footer {
+                form {width: 70%;}
+                .tabs-content {                
+                        .content {
+                                height: 386px;
+                        }
+                }        
+        }
+
+        #slide-3 .bcg {
+                padding-top: 20%;
+                background-image: url('../images/banner/top_banner.jpg');
+        }
+
+
+        body.works-page {
+
+                #top_slides_section {
+                        margin-top: -100px;
+                        .item {
+                                .project-title {
+                                    position: absolute;
+                                    //left: 4%;
+                                    .title {
+                                            padding: 2em 0 4em;
+                                    }                                    
+                                    .fixed-left.columns{
+                                        padding-left: 0;
+                                        padding-right: 0; 
+                                    }
+                                    .fixed-right.columns{
+                                        padding-left: 0;
+                                        padding-right: 0; 
+                                    }
+
+                                    .customOwlControls {
+                                        .btn-control {
+                                           // padding: 4em 1.5em 4em;
+                                            //height: 11em;
+                                            .btn-next,
+                                            .btn-prev {
+                                                    height: 11em;
+                                                    padding: 4.5em 2em 4.5em 1em;
+                                            }
+
+                                        }
+                                    }
+                                              
+                                }
+                                .project-description {
+
+                                    .left-description,
+                                    .right-description {
+                                            padding: 4em 2em 0 4em;
+                                            height: em(700px);
+                                    }
+                        
+                                    /* .left-description {
+                                        padding: 4em 0 0 4em;
+                                    }
+                                    .right-description {
+                                        //background: $light_gray;
+                                        padding: 4em 0 0 4em;
+                                    } */
+                                }
+                        }
+                        .slider-buttons {
+                                position: absolute;
+                                bottom: 5%;
+                                
+                                button.tiny,
+                                .button.tiny {
+                                    padding-top: 0.6rem;
+                                    padding-right: 1.4rem;
+                                    padding-bottom: 0.6rem;
+                                    padding-left: 1.4rem;
+                                    //background-color: rgba(93,94,91,1);
+                                }
+                        }
+                        .orbit-container {
+
+                                .orbit-slides-container {
+                                        & > * {
+                                                padding-top: 100px;
+                                        }
+                                }
+                        }                                
+                }
+        } 
+}
+
+
+
+@media #{$small-only} {
+
+
+        body.cover-page {
+           
+            #slide-1 .bcg {
+                    .hsContent {
+                           .fixed_title {
+                                    padding: 4em 0 0;
+                                    h1.border-corners {
+                                         font-size: 3em;
+                                         float: none;
+                                         text-align: center;
+                                    }
+                                    .showcase-banner {
+                                        min-height: 400px;
+                                    }
+                           }
+                           h2 {
+                                font-size: 1.2rem;
+                           }
+                    }       
+            }
+
+
+            #about_section {
+
+                .about-panel {
+                    .left-about-panel {
+                        height: 560px;
+                        padding: 10% 15%;
+                        float: none;
+                        .panel-content {
+                            ul {
+                                text-align: left;
+                            }
+                        }
+                        .social-media {
+                            & > .inline-list {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .right-part {
+                        z-index: 10;
+                    }
+
+
+                }
+
+                
+                .tabs-menu {
+                    right: 0%;
+                    left: 0%;
+                    float: none;
+                    position: absolute;
+                    z-index: 5;
+                    @include transform(rotate(90deg)); 
+                    
+                    .tab-title {
+                        & > a#last-panel-tab,
+                        & > a#first-panel-tab,
+                        & > a#mid-panel-tab {
+                            padding: 2rem 1rem;
+                        }
+                    }  
+                        ul {
+                                &.tabs {float: left;}                                
+                                @include transform(translate(70px, 0px));
+                                .fa {
+                                        @include transform(rotate(270deg)); 
+                                }                                
+                        }
+                }             
+            }
+        }
+
+        body.works-page {
+
+                #top_slides_section {
+                        margin-top: 0;
+
+                        .item {
+                                .project-title {
+                                    margin: 0;
+                                    //bottom: 0%;
+                                    //width: 100%;
+                                    position: relative;
+                                    .title {
+                                            padding: 1.1em 1em 4em;
+                                            p.tags {
+                                                display: none;
+                                            }
+                                    }
+                                    .fixed-right,
+                                    .fixed-left {
+                                        //padding-left: auto;
+                                        padding: 0; 
+                                    }
+                                    .customOwlControls {
+
+                                            .btn-next, 
+                                            .btn-prev {
+                                                    padding: 4em 1em ;
+                                            }        
+                                    }
+
+                                }
+                        }
+                        
+                        .slider-buttons {
+                                //right: 20%;
+                                margin: 0;
+                                position: relative;
+                                background: #0d0b11;
+                                button.tiny,
+                                .button.tiny {
+                                    padding-top: 0.6rem;
+                                    padding-right: 1.4rem;
+                                    padding-bottom: 0.6rem;
+                                    padding-left: 1.4rem;
+                                    
+                                }
+                        }
+                        .project-description {
+
+                            h2 {
+                                font-size: 1.5em;
+                                text-align: center;
+                            }
+                        
+                            .left-description {
+                                padding: 2em 4em;
+                            }
+                            .right-description {
+                                //background: $light_gray;
+                                padding: 4em 0 0 4em;
+
+                            }
+                        }
+                        .orbit-container {
+
+                                .orbit-slides-container {
+                                        & > * {
+                                                padding-top: 0;
+                                        }
+                                }
+                        }
+                }
+                #slide-3 .bcg {
+                    padding-top: 0;
+                }
+        }        
+
+        .visit-site-button{
+                float: right;
+        }
+
+        #top_slides_section {
+                .slider_navigation {
+                        margin-bottom: 4em;
+                }
+                #slider_top {
+                        height: 450px;
+                }                
+        }       
+
+        #slide-3 .bcg {
+                padding-top: 10%;
+                background: $light_gray;                
+        }
+
+        #slide-2 {
+            margin-bottom: -60px;
+        }
+
+        .pic {                
+                @include animation(none)
+        }
+
+        figure.effect-layla  {
+                height: 300px;
+        }
+       
+
+        footer {
+                & > form {width: 100%;}
+                form#newsletter_form {
+                    input.button {
+                        width: 100%;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+
+                    }
+                }
+                .tabs-content {                
+                        .content {
+                                height: 396px;
+                        }
+                        #panel3-2.content.active {
+                                height: 450px;
+                        }
+                }
+                .socials-footer {
+                    margin-bottom: 2.5em;
+                }        
+        }
+
+        
+
+        #gallery_section {
+               
+        }
+
+
+
+        #gallery_section {
+            .row-slider {
+                        .title {
+                                margin-top: 1rem;
+                        }
+            }
+
+            .row > .small-12 {
+                    margin-bottom: 0.5rem;
+            }
+
+            .paddingless {
+                padding: 0;
+                & .columns {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+            ul {
+
+                & > li {
+                    padding: 0;
+                }
+
+                .modalBox {
+
+                        &:hover {
+                            .title-for-small {
+                                background: #fff;
+                                @include transition(all 0.05s ease);
+                                h2 {
+                                    color: #121111;
+                                }
+                            }
+                        }
+
+                        .title-for-small {
+                            background: #121111;
+                            padding: .5rem 0 .2rem;
+                            h2 {
+                                color: #fff;
+                                text-transform: uppercase;
+                                margin-bottom: 0;
+                            }
+                            p {
+                                color: #454545;
+                                font-decoration: italic;
+                            }
+                        }
+                }
+            }
+        }
+        #top_slides_section {
+        
+                margin-top: 0;
+                //padding: 5% 5% 10%;
+
+                .orbit-caption p.capt-bot-right-book{
+                        padding-top: 60%;
+                }
+
+                .slider_wrap {
+
+                        height: 480px;
+
+                        img {
+                                padding-top: 40%;
+                        }
+
+                        img.slide_name_img {
+                                padding-top: 60%;
+                        }
+
+
+                        .orbit-container {
+                                height: 100%;
+                        }        
+                        
+                        .orbit-caption {
+
+                                top: 0;
+                                height: 100%;
+
+                                p {
+                                        width: 100%;
+
+                                        &.capt-bot-right {
+                                                width: 100%;
+                                                padding-top: 60%;
+                                        }
+
+                                        &.capt-bot-right-book {
+                                                padding-top: 80%;
+                                                width: 100%;
+                                        }
+
+                                        &.capt-top-right {
+                                                width: 100%;
+                                        }
+
+                                        &.capt-bot-left {
+                                                padding-top: 60%;
+                                                width: 100%;
+                                        }
+                                }
+                        }
+                        .slide_manifesto {
+                                padding-top: 10%;
+                        }
+                }
+
+                .orbit-container .orbit-prev,
+                .orbit-container .orbit-next {
+                        display: none;
+                }
+        }
+
+        .subtitle h6 {
+                font-size: 0.9rem;
+        }  
+}
+
+@media #{$small-only-landscape} {
+        body.cover-page {
+            #slide-1 .bcg {
+                        .hsContent {
+                               .fixed_title {
+                                        padding: 1em 0 0;
+                                        .showcase-banner {
+                                            min-height: 240px;
+                                            .type-wrap {
+                                                    margin-top: 10%;
+                                                    padding: 0 50px;
+                                                    //font-size: 1em;
+                                            }
+                                        }
+                                        
+                               }
+                               h2 {
+                                    font-size: 1.2rem;
+                               } 
+                        }       
+            }
+            #about_section {
+
+                /* .about-panel {
+                    .left-about-panel {
+                        .social-media {
+                            & > .inline-list {
+                                margin: 0;
+                            }
+                        }
+                    }
+                } */
+
+                .right-part {
+                    //z-index: 10;
+                }
+                .tabs-menu {
+                    /* right: 0%;
+                    left: 0%;
+                    float: none; */
+                    
+                    .tab-title {
+                        & > a#last-panel-tab,
+                        & > a#first-panel-tab,
+                        & > a#mid-panel-tab {
+                            //padding: 2rem 1rem;
+                        }
+                    }  
+                    ul {
+
+                        
+
+                            &.tabs {
+                               float: left;
+                            }                                        
+                            //z-index: -1;
+                            
+                            @include transform(translate(160px, 0px));
+                            .fa {
+                                    //@include transform(rotate(270deg)); 
+                            }
+                    }
+                }                    
+            }
+
+            #top_slides_section {
+                
+                
+
+                .orbit-container {
+
+                        .orbit-slides-container { 
+                                & img {
+                                        width: 60%;
+                                        //padding: 0 5em 2.5em;
+                                }
+                        }
+                }
+            }                    
+            /* figure { 
+                      &.effect-layla {
+                          height: 200px;
+                      }
+                      figcaption {
+                          a > i,
+                          .caption_divider {
+                              display: none;
+                          }
+                      }
+                  }   */      
+        }
+        body.works-page {
+
+                #top_slides_section {
+                        //margin-top: 0;
+
+                        .item {
+                                .project-title {
+                                   // margin: 0;
+                                    //bottom: 0%;
+                                    //width: 100%;
+                                    //position: relative;
+                                    .title {
+                                            //padding: 1.1em 1em 4em;
+                                            p.tags {
+                                                //display: none;
+                                            }
+                                    }
+                                    .fixed-right,
+                                    .fixed-left {
+                                        //padding-left: auto;
+                                        //padding: 0; 
+                                    }
+                                    .customOwlControls .btn-next {
+                                            //padding: 4em 1em ;
+                                    }
+
+                                }
+                        }
+                        
+                        .slider-buttons {
+                                //right: 20%;
+                                //margin: 0;
+                                //position: relative;
+                                //background: #0d0b11;
+                                button.tiny,
+                                .button.tiny {
+                                    //padding-top: 0.6rem;
+                                    //padding-right: 1.4rem;
+                                    //padding-bottom: 0.6rem;
+                                    //padding-left: 1.4rem;
+                                    
+                                }
+                        }
+                        .project-description {
+
+                            h2 {
+                                font-size: 2em;
+                                //text-align: center;
+                            }
+                        
+                            .left-description {
+                                //padding: 2em 4em;
+                            }
+                            .right-description {
+                                //background: $light_gray;
+                                //padding: 4em 0 0 4em;
+
+                            }
+                        }
+                        .orbit-container {
+
+                                .orbit-slides-container {
+                                        
+                                        li.cover-slide {
+                                            img {
+                                                margin-top: 10%;
+                                            }
+                                        }
+                                        img {
+                                            width: 60%;
+
+                                        }
+                                        & > * {
+                                                //padding-top: 0;
+                                        }
+                                }
+                        }
+                }
+                #slide-3 .bcg {
+                    //padding-top: 0;
+                }
+        } 
+
+        footer {
+            form {
+                padding: 0 10%;
+            }
+            .socials-footer {
+                    padding: 0 10%;
+            }
+        } 
+}
+
+@media #{$small-up} {
+
+        
+
+        #cd-gallery-items li {
+                width: 48%;
+                float: left;
+                margin-bottom: 2em;
+                margin-right: 4%;
+        }
+
+        #cd-gallery-items li:nth-child(2n) {
+                margin-right: 0;
+        }
+
+        .nav_box {
+                li {
+                    width: 100%;
+                }
+        }
+
+        .slider_wrap {
+                padding: 0;
+                .orbit-caption p.capt-bot-right {
+                        padding-top: 30%;
+                }
+        }
+
+        .reveal-modal {
+
+                p, ul {
+                    font-size: 0.9rem;
+                }
+                height: 950px;
+        }
+
+        body.works-page {
+
+                #top_slides_section {
+
+                        .item {
+                                .project-title {
+                                    .title {
+                                            p.tags {
+                                            }
+                                    }
+                                    .fixed-right,
+                                    .fixed-left {
+                                    }
+                                    .customOwlControls .btn-next {
+                                    }
+
+                                }
+                        }
+                        .slider-buttons {
+                                //right: 20%;
+                                //margin: 0;
+                                button.tiny,
+                                .button.tiny {
+                                    padding-top: 0.8rem;
+                                    padding-right: 0.6rem;
+                                    padding-bottom: 0.8rem;
+                                    padding-left: 0.6rem;
+                                    margin-left: .4rem;
+                                    
+                                }
+                        }
+                        .project-description {
+
+                            h2 {
+                            }
+                        
+                            .left-description {
+                            }
+                            .right-description {
+                            }
+                        }
+                        .orbit-container {
+
+                                .orbit-slides-container {
+                                        
+                                }
+                        }
+                }
+                
+        }  
+
+
+                                           
+}
+
+
+
+//*===================================*/
+//*00 - CUSTOM BREAKPOINTS */
+//*===================================*/
+
+
+/*http://i-skool.co.uk/mobile-development/web-design-for-mobiles-and-tablets-viewport-sizes/*/
+/*At least requires the meta viewport tag with content  'width=device-width'*/
+
+@media only screen and (max-width: 1080px) and (orientation : portrait) {
+  /* PORTRAIT:
+    Windows Surface Pro*/
+}
+
+
+@media only screen and (max-width: 800px) and (orientation : portrait) {
+    /* PORTRAIT:
+    Acer Iconia Tab A100
+    Acer Iconia Tab A200
+    Acer Iconia Tab A502
+    Arnova 8C G3
+    ASUS Padfone
+    ASUS Transformer Pad TF300T
+    ASUS Transformer TF101
+    Motorola Xoom
+    Motorola Xoom 2
+    Samsung Galaxy Note 10.1
+    Samsung Galaxy Tab 8.9
+    Samsung Galaxy Tab 10.1
+    Samsung Galaxy Tab 10.1*/
+
+    body.cover-page {
+            #top_slides_section {
+                    .orbit-container {
+                     
+                            .orbit-slides-container { 
+                                     /* & img {
+                                             width: 60%;
+                                             //padding: 0 5em 2.5em;
+                                     } */
+                            }
+                            .orbit-prev {
+                                left: 78%;
+                            }
+                    }
+            }
+            #about_section {
+                    .tabs-menu {
+                            //margin-right: 1.5em;
+                            //margin-right: 0;
+                            .tab-title {
+                                & > a#last-panel-tab,
+                                & > a#first-panel-tab,
+                                & > a#mid-panel-tab {
+                                    //padding: 1rem;
+                                }
+                            }
+                            ul {                                        
+                                    @include transform(translate(30px, 0px));
+                            } 
+                    }
+            }
+    }
+
+
+    body.works-page {
+        #top_slides_section {
+            .item {
+
+                .customOwlControls {
+                    .btn-control {
+                        padding: 4em 1.5em 4em;
+                        .btn-next,
+                        .btn-prev {
+                                height: 8em;
+                                padding: 4.5em 2em 4.5em;
+                        }
+
+                    }
+                }
+                /* .customOwlControls {
+                    .btn-control {
+                            //display: block;
+                            //padding: 4.5em 1.5em 4.5em;
+                            //height: 12em;
+                            //padding: 4.5em 1em 4.5em 1em;
+                            //height: 13em;
+                            //padding: 5em 1em;
+                            height: 8em;
+                            padding: 4em 1em 5em;
+                            //padding: 4em 0;
+                            //background: $basic_black;
+                    }
+                } */
+                .project-title {
+                        //position: absolute;
+                        //left: 4%;
+                        .title {
+                                padding: 1em;
+                        }
+                }
+                .project-description {
+
+                        .left-description,
+                        .right-description {
+                                //padding: 4em 2em 0 4em;
+                                //height: em(700px);
+                        }
+            
+                        /* .left-description {
+                            padding: 4em 0 0 4em;
+                        }*/
+                        .right-description {
+                            //background: $light_gray;
+                            padding: 4em 0 0 2em;
+                        } 
+                }
+
+            }
+            .slider-buttons {
+                    bottom: 1%;
+            }                    
+        }
+    }
+}
+ 
+@media only screen and (max-width: 768px) and (orientation : portrait) {
+    /* PORTRAIT:
+    Apple iPad
+    Apple iPad 2
+    Apple iPad 3 (and 4)
+    Apple iPad Mini
+    Archos 80G9
+    BAUHN AMID-972XS
+    HP Touchpad
+    LG Optimus Pad
+    Microsoft Surface (RT)
+    Panasonic Toughpad A1
+    Kindle Paperwhite*/
+}
+ 
+@media only screen and (max-width: 640px) and (orientation : portrait) {
+    /* PORTRAIT:
+    Acer Iconia Tab A500
+    Arnova 7FG3
+    Nexus 7*/
+}
+ 
+@media only screen and (max-width: 600px) and (orientation : portrait) {
+    /* PORTRAIT:
+    Acer Iconia Tab A101
+    Archos 70b (it2)
+    Arnova 10b G3
+    BlackBerry PlayBook
+    Kindle 3
+    Kobo eReader Touch
+    Samsung Galaxy Tab 2 7.0
+    Samsung Galaxy Tab 7*/
+
+    body.works-page {
+
+                #top_slides_section {
+                        //margin-top: -100px;
+                        .item {
+                                .project-title {
+                                    //position: absolute;
+                                    //left: 4%;
+                                    .title {
+                                            //padding: 1.1em 0 4em;
+                                    }                                    
+                                    .fixed-left.columns{
+                                        //padding-left: 0;
+                                        //padding-right: 0; 
+                                    }
+                                    .fixed-right.columns{
+                                        //padding-left: 0;
+                                        //padding-right: 0; 
+                                    }
+
+                                    .customOwlControls {
+                                        .btn-control {
+                                            padding: 4em 1.5em 4em;
+                                            height: 9em;
+                                            .btn-next,
+                                            .btn-prev {
+                                                    //height: 11em;
+                                                    //padding: 4.5em 2em 4.5em 1em;
+                                            }
+
+                                        }
+                                    }
+                                              
+                                }
+                                .project-description {
+
+                                    .left-description,
+                                    .right-description {
+                                            //padding: 4em 2em 0 4em;
+                                            //height: em(700px);
+                                    }
+                        
+                                    /* .left-description {
+                                        padding: 4em 0 0 4em;
+                                    }
+                                    .right-description {
+                                        //background: $light_gray;
+                                        padding: 4em 0 0 4em;
+                                    } */
+                                }
+                        }
+                        .slider-buttons {
+                                //position: absolute;
+                                //bottom: 5%;
+                                
+                                button.tiny,
+                                .button.tiny {
+                                   //padding-top: 0.6rem;
+                                   //padding-right: 1.4rem;
+                                   //padding-bottom: 0.6rem;
+                                   //padding-left: 1.4rem;
+                                    //background-color: rgba(93,94,91,1);
+                                }
+                        }
+                        .orbit-container {
+
+                                .orbit-slides-container {
+                                        & > * {
+                                                //padding-top: 100px;
+                                        }
+                                }
+                        }                                
+                }               
+    }
+
+    body.cover-page {
+                #about_section {
+                        .tabs-menu {
+                                //margin-right: 1.5em;
+                                //margin-right: 0;
+                                .tab-title {
+                                    & > a#last-panel-tab,
+                                    & > a#first-panel-tab,
+                                    & > a#mid-panel-tab {
+                                        //padding: 1rem;
+                                    }
+                                }
+                                ul {                                        
+                                        @include transform(translate(30px, 0px));
+                                } 
+                        }
+                }
+    }
+}
+ 
+@media only screen and (max-width: 540px) and (orientation : portrait) {
+    /* PORTRAIT:
+    HTC Evo 3D
+    Kindle Fire HD 7
+    Kindle Fire HD 8.9
+    Ainol Novo 7 Elf 2*/
+}
+ 
+@media only screen and (max-width: 480px) and (orientation : portrait) {
+    /* PORTRAIT:
+    Arnova 7 G2
+    BlackBerry Bold 9780
+    HTC Desire Z
+    Nokia N900
+    Samsung Galaxy Grand*/
+}
+ 
+@media only screen and (max-width: 400px) and (orientation : portrait) {
+    /* PORTRAIT:
+    Samsung Galaxy Note
+    Nexus 4
+    HTC One S
+    HTC One XL
+    HTC Sensation XL
+    HTC Velocity 4G
+    Motorola Droid3
+    Motorola Droid Razr
+    Motorola Razr HD 4G
+    Motorola Razr M 4G
+    Nokia 500
+    Samsung Galaxy Note 2
+    Samsung Galaxy S3
+    BlackBerry Bold 9900
+    BlackBerry 9520
+    BlackBerry Z10*/
+    
+    body.cover-page {
+           
+            /* #slide-1 .bcg {
+                    .hsContent {
+                           .fixed_title {
+                                    padding: 4em 0 0;
+                                    h1.border-corners {
+                                         font-size: 3em;
+                                         float: none;
+                                         text-align: center;
+                                    }
+                                    .showcase-banner {
+                                        min-height: 400px;
+                                    }
+                           }
+                           h2 {
+                                font-size: 1.2rem;
+                           }
+                    }       
+            } */
+
+
+            #about_section {
+
+                .about-panel {
+                    .left-about-panel {
+                        //height: 560px;
+                        //padding: 10% 15%;
+                        //float: none;
+                        .panel-content {
+                            ul {
+                                //text-align: left;
+                            }
+                        }
+                        .social-media {
+                            & > .inline-list {
+                               // margin: 0;
+                            }
+                        }
+                    }
+
+                    .right-part {
+                        //z-index: 10;
+                    }
+                }
+
+                .tabs-menu {
+                    //right: 0%;
+                    //left: 0%;
+                    //float: none;
+                    //position: absolute;
+                    //z-index: 5;
+                    //@include transform(rotate(90deg)); 
+                    
+                    .tab-title {
+                        & > a#last-panel-tab,
+                        & > a#first-panel-tab,
+                        & > a#mid-panel-tab {
+                            //padding: 2rem 1rem;
+                        }
+                    }  
+                        ul {
+                                //&.tabs {float: left;}                                
+                                @include transform(translate(150px, 0px));
+                                .fa {
+                                       // @include transform(rotate(270deg)); 
+                                }                                
+                        }
+                }
+
+                
+                            
+            }
+        }
+}
+ 
+@media only screen and (max-width: 360px) and (orientation : portrait) {
+    /* PORTRAIT:
+    Apple iPhone 3G
+    Apple iPhone 3GS
+    Apple iPhone 4
+    Apple iPhone 4S
+    Apple iPhone 5
+    Apple iPod Touch
+    BlackBerry Bold 9360
+    BlackBerry Bold 9790
+    BlackBerry Curve 9320
+    BlackBerry Curve 9380
+    BlackBerry Torch 9800
+    BlackBerry Torch 9810
+    HP Veer
+    HTC 7 Mozart
+    HTC 7 Trophy
+    HTC Desire
+    HTC Desire C
+    HTC Desire HD
+    HTC Legend
+    HTC One V
+    HTC Titan 4G
+    HTC Wildfire S
+    HTC Windows Phone 8X
+    Huawei U8650
+    LG Optimus 2X
+    LG Optimus L3
+    Motorola Defy
+    Motorola Milestone
+    Nexus S
+    Nokia Lumia 610
+    Nokia Lumia 710
+    Nokia Lumia 800
+    Nokia Lumia 820
+    Nokia Lumia 900
+    Nokia Lumia 920
+    Samsung Galaxy Ace
+    Samsung Galaxy Ace 2
+    Samsung Galaxy S2
+    Sony Xperia E Dual
+    BlackBerry Curve 9300*/
+    
+    
+    
+
+    body.works-page {
+
+                #top_slides_section {
+                        /* margin-top: -100px;*/
+                        .item {
+                                .project-title {
+                                    position: relative;
+                                    left: 0%;
+                                    .title {
+                                            padding: 1.1em 0 4em;
+
+                                            .fixed-left {
+                                                    padding: 0;
+                                            }
+
+                                            .fixed-right {
+                                                padding: 0;
+                                            }
+
+
+                                    }                                    
+                                    /* .fixed-left.columns{
+                                        padding-left: 0;
+                                        padding-right: 0; 
+                                    }
+                                    .fixed-right.columns{
+                                        padding-left: 0;
+                                        padding-right: 0; 
+                                    }
+                                                            
+                                     .customOwlControls .btn-next {
+                                            padding: 4em 2em 4em 1em;
+                                    } */
+                                              
+                                }
+                                .project-description {
+
+                                    h2 {
+                                        font-size: 1.3em;
+                                        text-align: center;
+                                    }
+                                                        
+                                    /* .left-description,
+                                    .right-description {
+                                            padding: 4em 2em 0 4em;
+                                    } */
+                                                        
+                                    .left-description {
+                                        //padding: 4em 0 0 4em;
+                                        height: 500px;
+                                    }
+                                     .right-description {
+                                        //background: $light_gray;
+                                        //padding: 4em 0 0 4em;
+                                        height: 700px;
+                                    } 
+                                }
+                        }
+                        .slider-buttons {
+                                right: 0;
+                                //display: none;
+                                /* position: absolute;
+                                bottom: 5%;
+                                margin-left: 45%; */
+                                /* button.tiny,
+                                .button.tiny {
+                                    padding-top: 0.8rem;
+                                    padding-right: 0.8rem;
+                                    padding-bottom: 0.8rem;
+                                    padding-left: 0.8rem;
+                                    margin-left: .4rem;
+                                }  */
+                        } 
+                        .orbit-container {
+
+                                .orbit-slides-container {
+                                        .cover-slide {
+                                                padding: 10%;
+                                        }
+                                }
+                        }                                
+                }
+    }
+
+    body.cover-page {
+            #slide-1 .bcg {
+                        .hsContent {
+                               .fixed_title {
+                                        padding: 2em 0 0;
+                                        .showcase-banner {
+                                            min-height: 300px;
+                                            .type-wrap {
+                                                    margin-top: 12%;
+                                                    padding: 0 20px;
+                                                    font-size: 1em;
+                                            }
+                                        }
+                                        
+                               }
+                               h2 {
+                                    font-size: 1.2rem;
+                               }
+                        }       
+            }
+           /*  #about_section {
+
+                .about-panel {
+                    .left-about-panel {
+                        .social-media {
+                            & > .inline-list {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                .right-part {
+                    //z-index: 10;
+                }
+                .tabs-menu {
+                    right: 0%;
+                    left: 0%;
+                    float: none;
+                    
+                    .tab-title {
+                        & > a#last-panel-tab,
+                        & > a#first-panel-tab,
+                        & > a#mid-panel-tab {
+                            padding: 2rem 1rem;
+                        }
+                    }  
+                        ul {
+
+                            
+
+                                &.tabs {
+                                   float: left;
+                                }                                        
+                                //z-index: -1;
+                                
+                                @include transform(translate(70px, 0px));
+                                .fa {
+                                        //@include transform(rotate(270deg)); 
+                                }
+                        }
+                }                    
+            } */
+            figure { 
+                &.effect-layla {
+                    height: 200px;
+                }
+                figcaption {
+                    a > i,
+                    .caption_divider {
+                        display: none;
+                    }
+                }
+            }        
+
+    }
+}
+ 
+@media only screen and (max-width: 240px) and (orientation : portrait) {
+    /* PORTRAIT:
+    LG Viewty KU990
+    Nokia 700
+    Nokia 2700
+    Nokia N95
+    Samsung Galaxy S3 Mini
+    Nokia 300*/
+        /* body.works-page {
+                                                                                  
+                                                     #top_slides_section {
+                                                             //margin-top: -100px;
+                                                             .item {
+                                                                     .project-title {
+                                                                         //position: relative;
+                                                                         //left: 4%;
+                                                                         .title {
+                                                                                 //padding: 1.1em 0 4em;
+                                                                                 .fixed-left.columns,
+                                                                                 .fixed-columns.columns {
+                                                                                         padding-right: 0;
+                                                                                 }
+                                                                                 .fixed-right.columns {
+                                                                                     padding-left: 0;
+                                                                                 }
+                                                                         }
+                                                                     }
+                                                             }
+                                                     }        
+                                                 }  */                                         
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+@media only screen and (max-width: 1920px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    Windows Surface Pro*/
+}
+ 
+@media only screen and (max-width: 1366px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    Microsoft Surface (RT)*/
+}
+ 
+@media only screen and (max-width: 1280px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    Acer Iconia Tab A100
+    Acer Iconia Tab A200
+    Acer Iconia Tab A502
+    ASUS Transformer Pad TF300T
+    ASUS Transformer TF101
+    Motorola Xoom
+    Motorola Xoom 2
+    Samsung Galaxy Note 10.1
+    Samsung Galaxy Tab 8.9
+    Samsung Galaxy Tab 10.1
+    Samsung Galaxy Tab 10.1
+    LG Optimus Pad
+    Acer Iconia Tab A500*/
+/* 
+    body.cover-page {
+        #top_slides_section {                     
+                     
+                    .orbit-container {
+                     
+                            .orbit-slides-container { 
+                                     & img {
+                                             width: 60%;
+                                             //padding: 0 5em 2.5em;
+                                     }
+                            }
+                            .orbit-prev {
+                                left: 78%;
+                            }
+
+                    }
+                                  
+                figure { 
+                           &.effect-layla {
+                               height: 200px;
+                           }
+                           figcaption {
+                               a > i,
+                               .caption_divider {
+                                   display: none;
+                               }
+                }
+        }
+    } */
+
+
+}
+ 
+@media only screen and (max-width: 1130px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    ASUS Padfone
+    Arnova 8C G3
+    Arnova 7FG3*/
+}
+ 
+@media only screen and (max-width: 1024px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    Apple iPad
+    Apple iPad 2
+    Apple iPad 3 (and 4)
+    Apple iPad Mini
+    Archos 80G9
+    BAUHN AMID-972XS
+    HP Touchpad
+    Panasonic Toughpad A1
+    Acer Iconia Tab A101
+    Archos 70b (it2)
+    Arnova 10b G3
+    BlackBerry PlayBook
+    Samsung Galaxy Tab 2 7.0
+    Samsung Galaxy Tab 7
+    Ainol Novo 7 Elf 2*/
+}
+ 
+@media only screen and (max-width: 980px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    Nexus 7
+    HTC Evo 3D*/
+}
+ 
+@media only screen and (max-width: 802px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    Kindle Fire HD 7
+    Kindle Fire HD 8.9
+    Arnova 7 G2
+    HTC Desire Z
+    Nokia N900
+    Samsung Galaxy Grand*/
+}
+ 
+@media only screen and (max-width: 691px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    BlackBerry 9520*/
+}
+ 
+@media only screen and (max-width: 640px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    Samsung Galaxy Note
+    HTC One S
+    HTC One XL
+    HTC Sensation XL
+    HTC Velocity 4G
+    Motorola Droid Razr
+    Nokia 500
+    Samsung Galaxy Note 2
+    Samsung Galaxy S3*/
+    body.cover-page {
+            /* #slide-1 .bcg {
+                        .hsContent {
+                               .fixed_title {
+                                        padding: 1em 0 0;
+                                        .showcase-banner {
+                                            min-height: 240px;
+                                            .type-wrap {
+                                                    margin-top: 10%;
+                                                    padding: 0 50px;
+                                                    //font-size: 1em;
+                                            }
+                                        }
+                                        
+                               }
+                               h2 {
+                                    font-size: 1.2rem;
+                               }
+                        }       
+            } */
+
+            #about_section {
+    
+                .about-panel {
+                    .left-about-panel {
+                         height: 500px;
+                        .social-media {
+                            & > .inline-list {
+                                //margin: 0;
+                            }
+                        }
+                    }
+                }
+    
+                .right-part {
+                    //z-index: 10;
+                }
+                .tabs-menu {
+                    //right: 0%;
+                    //left: 0%;
+                    //float: none;
+                    
+                    .tab-title {
+                        & > a#last-panel-tab,
+                        & > a#first-panel-tab,
+                        & > a#mid-panel-tab {
+                            //padding: 2rem 1rem;
+                        }
+                    }  
+                    ul {
+    
+                        
+    
+                            &.tabs {
+                               //float: left;
+                            }                                        
+                            //z-index: -1;
+                            
+                            @include transform(translate(270px, 0px));
+                            .fa {
+                                    //@include transform(rotate(270deg)); 
+                            }
+                    }
+                }                    
+            }
+    
+            /* #top_slides_section {
+                     
+                     
+                     
+                     .orbit-container {
+                     
+                             .orbit-slides-container { 
+                                     & img {
+                                             width: 60%;
+                                             //padding: 0 5em 2.5em;
+                                     }
+                             }
+                     }
+                 }                    
+                 figure { 
+                           &.effect-layla {
+                               height: 200px;
+                           }
+                           figcaption {
+                               a > i,
+                               .caption_divider {
+                                   display: none;
+                               }
+                           }
+                 }  */     
+    
+    }
+
+
+}
+ 
+@media only screen and (max-width: 600px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    Motorola Droid3
+    Nexus 4
+    Motorola Razr HD 4G
+    Motorola Razr M 4G
+    Motorola Defy
+    Motorola Milestone
+    Apple iPhone 5
+    HP Veer*/
+    
+    body.cover-page {
+            /* #slide-1 .bcg {
+                        .hsContent {
+                               .fixed_title {
+                                        padding: 1em 0 0;
+                                        .showcase-banner {
+                                            min-height: 240px;
+                                            .type-wrap {
+                                                    margin-top: 10%;
+                                                    padding: 0 50px;
+                                                    //font-size: 1em;
+                                            }
+                                        }
+                                        
+                               }
+                               h2 {
+                                    font-size: 1.2rem;
+                               }
+                        }       
+            } */
+
+            #about_section {
+    
+                .about-panel {
+                    .left-about-panel {
+                         //height: 500px;
+                        .social-media {
+                            & > .inline-list {
+                                //margin: 0;
+                            }
+                        }
+                    }
+                }
+    
+                .right-part {
+                    //z-index: 10;
+                }
+                .tabs-menu {
+                    //right: 0%;
+                    //left: 0%;
+                    //float: none;
+                    
+                    .tab-title {
+                        & > a#last-panel-tab,
+                        & > a#first-panel-tab,
+                        & > a#mid-panel-tab {
+                            //padding: 2rem 1rem;
+                        }
+                    }  
+                    ul {    
+                            @include transform(translate(220px, 0px));
+                            &.tabs {
+                               //float: left;
+                            }                            
+                            
+                            
+                    }
+                }                    
+            }
+    
+            /* #top_slides_section {
+                     
+                     
+                     
+                     .orbit-container {
+                     
+                             .orbit-slides-container { 
+                                     & img {
+                                             width: 60%;
+                                             //padding: 0 5em 2.5em;
+                                     }
+                             }
+                     }
+                 }                    
+                 figure { 
+                           &.effect-layla {
+                               height: 200px;
+                           }
+                           figcaption {
+                               a > i,
+                               .caption_divider {
+                                   display: none;
+                               }
+                           }
+                 }  */     
+    
+    }
+
+
+}
+ 
+@media only screen and (max-width: 540px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    HTC Desire
+    HTC Desire HD
+    HTC One V
+    LG Optimus 2X
+    Nexus S
+    Samsung Galaxy Ace 2
+    Samsung Galaxy S2
+    BlackBerry Z10*/
+}
+ 
+@media only screen and (max-width: 480px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    Apple iPhone 3G
+    Apple iPhone 3GS
+    Apple iPhone 4
+    Apple iPhone 4S
+    Apple iPod Touch
+    BlackBerry Torch 9800
+    BlackBerry Torch 9810
+    HTC 7 Mozart
+    HTC 7 Trophy
+    HTC Desire C
+    HTC Legend
+    HTC Titan 4G
+    HTC Wildfire S
+    HTC Windows Phone 8X
+    Huawei U8650
+    Nokia Lumia 610
+    Nokia Lumia 710
+    Nokia Lumia 800
+    Nokia Lumia 820
+    Nokia Lumia 900
+    Nokia Lumia 920
+    Samsung Galaxy Ace
+    Sony Xperia E Dual*/
+    /* body.cover-page {
+            #slide-1 .bcg {
+                        .hsContent {
+                               .fixed_title {
+                                        padding: 1em 0 0;
+                                        .showcase-banner {
+                                            min-height: 240px;
+                                            .type-wrap {
+                                                    margin-top: 10%;
+                                                    padding: 0 50px;
+                                                    //font-size: 1em;
+                                            }
+                                        }
+                                        
+                               }
+                               h2 {
+                                    font-size: 1.2rem;
+                               }
+                        }       
+            }
+            #about_section {
+    
+                .about-panel {
+                    .left-about-panel {
+                        .social-media {
+                            & > .inline-list {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+    
+                .right-part {
+                    //z-index: 10;
+                }
+                .tabs-menu {
+                    right: 0%;
+                    left: 0%;
+                    float: none;
+                    
+                    .tab-title {
+                        & > a#last-panel-tab,
+                        & > a#first-panel-tab,
+                        & > a#mid-panel-tab {
+                            //padding: 2rem 1rem;
+                        }
+                    }  
+                    ul {
+    
+                        
+    
+                            &.tabs {
+                               float: left;
+                            }                                        
+                            //z-index: -1;
+                            
+                            @include transform(translate(220px, 0px));
+                            .fa {
+                                    //@include transform(rotate(270deg)); 
+                            }
+                    }
+                }                    
+            }
+    
+            #top_slides_section {
+                
+                
+    
+                .orbit-container {
+    
+                        .orbit-slides-container { 
+                                & img {
+                                        width: 60%;
+                                        //padding: 0 5em 2.5em;
+                                }
+                        }
+                }
+            }                    
+            figure { 
+                      &.effect-layla {
+                          height: 200px;
+                      }
+                      figcaption {
+                          a > i,
+                          .caption_divider {
+                              display: none;
+                          }
+                      }
+                  }      
+    
+    } */
+
+}
+ 
+@media only screen and (max-width: 320px) and (orientation : landscape) {
+    /* LANDSCAPE:
+    Samsung Galaxy S3 Mini*/
+}

@@ -1,0 +1,64 @@
+@import "compass/css3/font-face";
+
+@mixin webfont($name, $base_filename, $weights, $style: 'normal') {
+    
+    // Add i.e. "-italic" to italic style fonts
+    $style : '';
+    @if $style != 'normal' {
+        $style : '-#{$style}';
+    }
+
+    @each $weight in $weights {
+        @include font-face(
+            $name,
+            font-files(
+                '#{$base_filename}_#{$weight}#{$style}.woff', woff, 
+                '#{$base_filename}_#{$weight}#{$style}.ttf', ttf), 
+            '#{$base_filename}_#{$weight}#{$style}.eot', 
+            $weight
+        );
+    }
+}
+
+
+// TRANSPARENCY MIXIN
+@mixin alpha-attribute($attribute, $color, $background: white) {
+      $percent: alpha($color) * 100%;
+      $opaque: opacify($color, 1);
+      $solid-color: mix($opaque, $background, $percent);
+      @if ($percent < 100%) { #{$attribute}: $solid-color; }
+      #{$attribute}: $color;
+}
+
+@mixin no_select {
+    -webkit-touch-callout: none;
+    @include user-select(none); 
+}
+
+@mixin tap-highlight-color($color: rgba(0,0,0,0)) {
+    -webkit-tap-highlight-color:$color;
+    -moz-tap-highlight-color:$color;
+    tap-highlight-color:$color;
+}
+
+// Opacity
+@mixin transparency($opacity){
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
+    filter: alpha(opacity=($opacity * 100));
+    -moz-opacity: $opacity;
+    -khtml-opacity: $opacity;
+    opacity: $opacity;
+}
+
+@mixin calc($property, $expression) { 
+    #{$property}: -webkit-calc(#{$expression}); 
+    #{$property}: calc(#{$expression}); 
+}
+
+//usage font-size: em(16)
+// Convert PX to EM global function
+
+@function em($px, $base: $rem-base) {
+    @return ($px / $base) * 1em;
+}
+
