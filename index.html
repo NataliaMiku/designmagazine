@@ -16,10 +16,8 @@
     ================================================== -->
     <link rel="shortcut icon" href="images/favicons/favicon.ico">
     <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
 
 
 
@@ -31,7 +29,7 @@
               <!--[if lt IE 7]>
               <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
               <![endif]-->          
-        <div id="cd-nav" class="hide-for-small-only">
+        <div id="cd-nav">
               <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
 
               <nav id="cd-main-nav">
@@ -92,7 +90,7 @@
                   <div class="row full-width">
                     <div class="large-12">
                       <!-- TOP BAR INITIALIZATION -->
-                      <nav class="top-bar nav_bg">
+                      <nav class="top-bar nav_bg" data-topbar>
                         <ul class="title-area">
                           <li class="name">
                               <img src="images/white_crown.png" width="35" height="38" alt="">
@@ -126,9 +124,9 @@
                      <div class="off-canvas-wrap" data-offcanvas="">
                           <div class="inner-wrap">
 
-                          <div class="contain-to-grid sticky">
+                          <div class="contain-to-grid">
                               
-                              <nav class="top-bar tab-bar show-for-small-only" data-topbar data-options="sticky_on: small">
+                              <nav class="tab-bar show-for-small-only">
                                   <section class="left-small">
                                     <a class="left-off-canvas-toggle menu-icon"><span></span></a>
                                   </section>
@@ -338,7 +336,6 @@
                                                                                               <li>Foundation</li>
                                                                                               <li>Bootstrap</li>
                                                                                               <li>Boilerplate</li>
-                                                                                              <li>GruntJS Task Runner</li>
                                                                                         </ul>
                                                                                     </div>
                                                                                     <div class="large-6 small-6 medium-6 columns text-center">
@@ -356,7 +353,7 @@
                                                                                 </div>                                                                              
                                                                                 <div class="large-12 medium-12 columns text-center">
                                                                                     <p>Natalia.Mikulenko.Resume.pdf(275kb)</p>
-                                                                                    <p>Last Updated: August 28ht, 2014</p>
+                                                                                    <p>Last Updated: July 1st, 2014</p>
                                                                                 </div>                                                                          
                                                                             </div>                                                                    
                                                                         </div>
@@ -434,17 +431,15 @@
                                                                 <ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-2">
                                                                   <li>
                                                                      <div class="modalBox">
-                                                                         <a href="projects.html#1">
-                                                                             <figure class="effect-layla">
-                                                                               <img src="images/gallery/thumbs/versailles-home.jpg" alt="versailles"/>
-                                                                               <figcaption class="hide-for-small-only">
-                                                                                 <h2>Versailles</h2>
-                                                                                 <p>Beauty Salon</p>
-                                                                                 <div class="caption_divider"></div>
-                                                                                 <a href="projects.html#1">View More<i class="fa fa-angle-double-down"></i></a>
-                                                                               </figcaption>     
-                                                                             </figure>
-                                                                           </a>    
+                                                                         <figure class="effect-layla">
+                                                                           <img src="images/gallery/thumbs/versailles-home.jpg" alt="versailles"/>
+                                                                           <figcaption class="hide-for-small-only">
+                                                                             <h2>Versailles</h2>
+                                                                             <p>Beauty Salon</p>
+                                                                             <div class="caption_divider"></div>
+                                                                             <a href="projects.html#1">View More<i class="fa fa-angle-double-down"></i></a>
+                                                                           </figcaption>     
+                                                                         </figure>
                                                                          <div class="title-for-small show-for-small-only">
                                                                               <h2>Versailles</h2>
                                                                              <p>Beauty Salon</p>
@@ -614,19 +609,17 @@
                                                               </div>
                                                               <div class="row">
                                                                   <div class="large-12 columns">
-                                                                      <div class="socials-footer">                                                                     
-                                                                          <h6>SOCIAL MEDIA</h6>
-                                                                          <div class="social-media-footer">
-                                                                            <ul class="inline-list">
-                                                                              <li><a href="https://www.behance.net/NatMiku"><i class="fa fa-fw fa-behance"></i></a></li>
-                                                                              <li><a href="https://plus.google.com/101373256226040485019/posts"><i class="fa fa-fw fa-google-plus"></i></a></li>
-                                                                              <li><a href="https://twitter.com/designmagnz"><i class="fa fa-fw fa-twitter"></i></a></li>
-                                                                              <!-- <li><a href="http://nat8989.deviantart.com/"><i class="fa fa-fw fa-deviantart"></i></a></li> -->
-                                                                              <li><a href="https://github.com/NataliaMiku"><i class="fa fa-fw fa-github-alt"></i></a></li>
-                                                                              <!-- <li><a href="#"><i class="fa fa-fw fa-instagram"></i></a></li> -->
-                                                                            </ul>
-                                                                          </div>
-                                                                      </div>    
+                                                                      <h6>NEWSLETTER</h6>
+                                                                      <div class="social-media-footer">
+                                                                        <ul class="inline-list">
+                                                                          <li><a href="https://www.behance.net/NatMiku"><i class="fa fa-fw fa-behance"></i></a></li>
+                                                                          <li><a href="https://plus.google.com/101373256226040485019/posts"><i class="fa fa-fw fa-google-plus"></i></a></li>
+                                                                          <li><a href="https://twitter.com/designmagnz"><i class="fa fa-fw fa-twitter"></i></a></li>
+                                                                          <!-- <li><a href="http://nat8989.deviantart.com/"><i class="fa fa-fw fa-deviantart"></i></a></li> -->
+                                                                          <li><a href="https://dribbble.com/Nat.Miku"><i class="fa fa-fw fa-dribbble"></i></a></li>
+                                                                          <!-- <li><a href="#"><i class="fa fa-fw fa-instagram"></i></a></li> -->
+                                                                        </ul>
+                                                                      </div>
                                                                   </div>
                                                               </div>
                                                           </div>
